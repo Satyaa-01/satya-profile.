@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyaa Profile</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon"> 
+
+    <!-- box icons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- remix icons link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Paste your provided CSS here */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: "Caveat", cursive;
+        }
+
+        :root {
+            --bg-color: #1d1c1b;
+            --text-color: #fff;
+            --main-color: #fa0000;
+            --other-color: #dd6868;
+            --h1-font: 5rem;
+            --p1-font: 1.1rem;
+        } 
+
+        /* Additional CSS styles... */
+    </style>
+
+</head>
+<body>
+
+    <!-- Your existing HTML content... -->
+
+    <header>
+        <a href="#" class="logo">Coding-School.</a>
+
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Skill</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+   
+
+            <div class="nav-right">
+                <a href="#" class="nav-btn">Hire Me!</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h6>Hello, <span>My Name Is</span></h6>
+            <h1><span>Nur Faiz</span> Satyawan</h1>
+            <h4>I am <span class="input"></span></h4>
+            <p>Selamat datang di website Portofolio saya,<br> 
+                From Jawah Tengah, Purworejo, Indonesian.</p>
+
+            <div class="hero-icons">
+                <a href="https://www.instagram.com/boyfaa_01?igsh=MXg5Y2MzcHp2bDdsZA=="><i class="ri-instagram-line"></i></a>
+                <a href="https://www.tiktok.com/@izzfaasensei?_t=8mBCdcf44lo&_r=1"><i class="ri-tiktok-line"></i></a>
+                <a href="http://discordapp.com/users/1206253185967067156"><i class="ri-discord-line"></i></a>
+                <a href="#"><i class="ri-download-cloud-line"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img src="foto.png" alt="Photo">
+        </div>
+    </section>
+
+    <!-- Your existing HTML content... -->
+
+    <br><br><br><br>
+    <section class="about">
+        <div class="about-img">
+            <img src="gambar.jpeg">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta tenetur assumenda
+             molestias facere veritatis nemo a adipisci iure mollitia, eius magnam, quos sint quia consectetur dicta facilis 
+             sequi exercitationem quam!</p>
+             <a href="#" class="btn-2">Experience</a>
+        </div>
+
+    </section>    
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed (".input", {
+            strings: ["Web Developer.", "Photographer.", "Designer."],
+            typeSpeed: 80,
+            backSpeed: 70,
+            loop: true  
+        });
+
+        let menu = document.querySelector ('#menu-icon');
+        let navlist = document.querySelector ('.navlist');
+
+        menu.onclick = () => {
+            menu.classList.toggle ('bx-x');
+            navlist.classList.toggle ('open');
+        }
+
+    </script>
+
+    
+</body>
+</html>
